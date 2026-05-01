@@ -2,20 +2,32 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+| Branch | Supported |
+| ------ | --------- |
+| `main` | Yes |
+| Other branches or forks | No |
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+The `main` branch is the supported branch for security updates. Older branches and forks may not receive fixes.
+
+---
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
+If you discover a security vulnerability, please report it responsibly.
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+- Do not open a public GitHub issue for security reports.
+- Use GitHub's private vulnerability reporting or contact the maintainer privately through GitHub.
+- Include a clear description, steps to reproduce, potential impact, and any suggested fix.
+
+You can expect an initial acknowledgement within 3-5 business days. Confirmed issues will be reviewed and addressed based on severity and project maintainability.
+
+---
+
+## Security Guidelines
+
+For contributors and users:
+
+- Do not commit secrets, API keys, credentials, or `.env` files.
+- Validate and sanitize user-provided vehicle, customer, sales, or account data.
+- Review dependencies before adding them, and keep them updated where practical.
+- Avoid exposing private customer, transaction, or dealership information in test data, screenshots, logs, or issues.
